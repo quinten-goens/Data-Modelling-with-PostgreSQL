@@ -1,7 +1,13 @@
-# Project: Data Modeling with PostgreSQL<img align="right" width="25%" height="25%" src="https://fedingo.com/wp-content/uploads/2021/09/Python-PostgreSQL.jpg">
+# Data Modeling with PostgreSQL<img align="right" width="25%" height="25%" src="https://fedingo.com/wp-content/uploads/2021/09/Python-PostgreSQL.jpg">
 
+This project is part of the course **Relational Databases** in the **Data Engineering Nanodegree** on Udacity. The final version of the repository will be submitted to Udacity for review and grading.  
 
-This project is part of the Data Engineering Nanodegree on Udacity. The final version of the repository will be submitted to Udacity for review and grading.  
+## Course Topics
+- OLAP & OLTP Database Systems
+- Normalization / Normal Forms
+- Denormalization
+- Fact and dimension tables
+- Star and snowflake schemas 
 
 ## Project Context
 
@@ -18,7 +24,7 @@ In this project, I applied what I've learned on data modeling with Postgres and 
 - Psycopg2
 
 ## Contributing
-Pull requests to show improvements of th existing code are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests to show improvements of the existing code are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
