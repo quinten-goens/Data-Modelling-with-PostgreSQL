@@ -1,4 +1,5 @@
-# Project: Data Modeling with Postgres
+# Project: Data Modeling with PostgreSQL<img align="right" width="30%" height="30%" src="https://fedingo.com/wp-content/uploads/2021/09/Python-PostgreSQL.jpg">
+
 
 This project is part of the Data Engineering Nanodegree on Udacity. The final version of the repository will be submitted to Udacity for review and grading.  
 
