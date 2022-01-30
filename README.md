@@ -3,6 +3,7 @@
 This project is part of the course **Relational Databases** in the **Data Engineering Nanodegree** on Udacity. The final version of the repository will be submitted to Udacity for review and grading.  
 
 ## Course Topics
+- Relational Databases & SQL
 - OLAP & OLTP Database Systems
 - Normalization / Normal Forms
 - Denormalization
