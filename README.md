@@ -24,6 +24,25 @@ They'd like a data engineer to create a Postgres database with tables designed t
 - Pandas
 - Psycopg2
 
+## Files
+- **create_tables.py**: Allows for the creation of the database tables.
+- **sql_queries.py**: Contains all postgeSQL insert, create statements. 
+- **etl.ipynb**: A notebook for testing purposes to test out SQL statements before running them on all files.
+- **etl.py**: The code to process all the data and insert it in the tables by using the queries defined in sql_queries.py.
+- **test.ipynb**: A notebook to check the contents of the database to validate whether the data is indeed correctly inserted.
+- **LICENSE**: The project license.
+
+## Usage
+To use the code written to create the database and tables, use the following in a terminal.
+```bash
+python create_tables.py
+```
+
+To insert the data from the /data directory in the database use the following:
+```bash
+python etl.py
+```
+
 ## Contributing
 Pull requests to show improvements of the existing code are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
