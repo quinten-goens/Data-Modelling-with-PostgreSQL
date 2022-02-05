@@ -28,7 +28,13 @@ def process_song_file(cur, filepath):
     cur.execute(song_table_insert, song_data)
     
     # insert artist record
-    artist_data = list(df[['artist_id', 'artist_name', 'artist_location','artist_latitude','artist_longitude']].values[0]) 
+    artist_data = list(df[[
+        'artist_id',
+        'artist_name',
+        'artist_location',
+        'artist_latitude',
+        'artist_longitude']
+    ].values[0]) 
     cur.execute(artist_table_insert, artist_data)
 
 
@@ -58,8 +64,23 @@ def process_log_file(cur, filepath):
     
     # insert time data records
     time_df = pd.DataFrame()
-    time_df['timestamp'],time_df['hour'],time_df['day'],time_df['week_of_year'],time_df['month'],time_df['year'],time_df['weekday'] = zip(
-    *t['ts'].apply(lambda l:(l,l.hour,l.day, l.isocalendar()[1],l.month,l.year,l.weekday())))
+    (
+    time_df['timestamp'],
+    time_df['hour'],
+    time_df['day'],
+    time_df['week_of_year'],
+    time_df['month'],
+    time_df['year'],
+    time_df['weekday'],
+    ) = zip(*t['ts'].apply(lambda l: (
+        l,
+        l.hour,
+        l.day,
+        l.isocalendar()[1],
+        l.month,
+        l.year,
+        l.weekday(),
+        )))
     time_df = time_df.drop_duplicates()
 
     for i, row in time_df.iterrows():
